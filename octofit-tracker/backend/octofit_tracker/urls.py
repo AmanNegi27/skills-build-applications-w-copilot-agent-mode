@@ -16,9 +16,12 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from . import api_urls
+import os
+
+CODESPACE_NAME = os.environ.get('CODESPACE_NAME')
+api_prefix = 'api/'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('octofit_tracker.api_urls')),
+    path(f'{api_prefix}', include('octofit_tracker.api_urls')),
 ]

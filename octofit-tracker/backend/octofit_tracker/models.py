@@ -4,7 +4,20 @@ from django.contrib.auth.models import AbstractUser
 # User model (extend as needed)
 class User(AbstractUser):
     # Add extra fields if needed
-    pass
+    groups = models.ManyToManyField(
+        'auth.Group',
+        related_name='octofit_users',
+        blank=True,
+        help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.',
+        verbose_name='groups',
+    )
+    user_permissions = models.ManyToManyField(
+        'auth.Permission',
+        related_name='octofit_user_permissions',
+        blank=True,
+        help_text='Specific permissions for this user.',
+        verbose_name='user permissions',
+    )
 
 # Team model
 class Team(models.Model):

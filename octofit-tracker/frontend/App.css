@@ -1,0 +1,65 @@
+/* App.css - Custom styles for Octofit Tracker React app using Bootstrap */
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.app-container {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.navbar {
+  margin-bottom: 2rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.table {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.btn-primary, .btn-success, .btn-danger {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 6px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #343a40;
+}
+
+.link {
+  color: #0d6efd;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+}

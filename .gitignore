@@ -3,6 +3,9 @@
 # Virtual Environment
 venv
 
+# Project-specific virtualenv
+octofit-tracker/backend/venv
+
 # octofit tracker app
 # octfit-tracker
 
@@ -31,3 +34,7 @@ yarn-error.log*
 # Python files
 *.pyc
 __pycache__/
+
+# Ignore backend venv and bytecode
+octofit-tracker/backend/*.pyc
+octofit-tracker/backend/__pycache__/
